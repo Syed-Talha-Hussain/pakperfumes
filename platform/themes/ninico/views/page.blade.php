@@ -2,7 +2,6 @@
     $page->loadMissing('metadata');
 
     $layout = in_array($page->template, ['default', 'full-width', 'blank']) ? $page->template : 'default';
-
     Theme::set('layout', $layout);
     Theme::set('headerStyle', $page->getMetaData('header_style', true));
     Theme::set('pageTitle', $page->name);
