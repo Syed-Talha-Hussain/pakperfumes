@@ -1,4 +1,3 @@
-@section('description', 'Welcome to Pakperfumes, contact.')
 {!! Form::open(['route' => 'public.send.contact', 'method' => 'POST', 'class' => 'contact-form']) !!}
 <div class="contact-form-row">
     {!! apply_filters('pre_contact_form', null) !!}
